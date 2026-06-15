@@ -1,0 +1,10 @@
+{
+    "documentId": "5e99bb78a8250c6c95a72420",
+    "workspaceId": "39aee4a9da8d2d7b8163efee",
+    "output": "robot.urdf",
+    "output_format": "urdf",
+    "assemblyName": "Main",
+    "parts": ["all"],
+    "apiKey": "on_BVvw6N23t3IPnYENaR7XO",
+    "apiSecret": "zHz973vptkFx8lotxCOJgx3ouzLOZhUaen1gWjOO9CafaVOO"
+}
