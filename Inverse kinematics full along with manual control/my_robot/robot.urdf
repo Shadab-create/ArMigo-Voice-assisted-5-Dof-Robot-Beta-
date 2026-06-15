@@ -1,0 +1,273 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: 5e99bb78a8250c6c95a72420 / workspace_id: 39aee4a9da8d2d7b8163efee -->
+<robot name="D:\ArMigo(Camera detection)\my-robot">
+  <!-- Link base -->
+  <link name="base">
+    <inertial>
+      <origin xyz="0.000371043 -0.00214123 0.0408023" rpy="0 0 0"/>
+      <mass value="0.817366"/>
+      <inertia ixx="0.00178047" ixy="-5.26828e-06" ixz="6.95606e-06" iyy="0.00177252" iyz="5.74933e-05" izz="0.00234298"/>
+    </inertial>
+    <!-- Part base_cover -->
+    <visual>
+      <origin xyz="1.17294e-17 5.10979e-18 0.18944" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets\base_cover.stl"/>
+      </geometry>
+      <material name="base_cover_material">
+        <color rgba="0.219608 0.219608 0.223529 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.17294e-17 5.10979e-18 0.18944" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets\base_cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base -->
+    <visual>
+      <origin xyz="1.17294e-17 5.10979e-18 0.103886" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets\base.stl"/>
+      </geometry>
+      <material name="base_material">
+        <color rgba="0.219608 0.219608 0.223529 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.17294e-17 5.10979e-18 0.103886" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets\base.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link base_joint -->
+  <link name="base_joint">
+    <inertial>
+      <origin xyz="0.00711901 0.000479763 -0.0402119" rpy="0 0 0"/>
+      <mass value="0.493459"/>
+      <inertia ixx="0.000765832" ixy="-4.20701e-06" ixz="5.30515e-05" iyy="0.000631671" iyz="-1.08541e-06" izz="0.000502006"/>
+    </inertial>
+    <!-- Part base_joint -->
+    <visual>
+      <origin xyz="-5.08446e-32 6.12323e-19 0.0254" rpy="-3.14159 -0 -6.38126e-16"/>
+      <geometry>
+        <mesh filename="package://assets\base_joint.stl"/>
+      </geometry>
+      <material name="base_joint_material">
+        <color rgba="0.219608 0.219608 0.223529 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.08446e-32 6.12323e-19 0.0254" rpy="-3.14159 -0 -6.38126e-16"/>
+      <geometry>
+        <mesh filename="package://assets\base_joint.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link shoulders -->
+  <link name="shoulders">
+    <inertial>
+      <origin xyz="0.0037654 0.0571502 -0.0185512" rpy="0 0 0"/>
+      <mass value="0.413751"/>
+      <inertia ixx="0.00115568" ixy="-5.81777e-05" ixz="1.71676e-06" iyy="0.000224153" iyz="2.63201e-05" izz="0.00128993"/>
+    </inertial>
+    <!-- Part joint_1__cover -->
+    <visual>
+      <origin xyz="-0.00413225 -0.0837181 0.013208" rpy="-1.62012 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets\joint_1__cover.stl"/>
+      </geometry>
+      <material name="joint_1__cover_material">
+        <color rgba="0.219608 0.219608 0.223529 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00413225 -0.0837181 0.013208" rpy="-1.62012 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets\joint_1__cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part joint_1 -->
+    <visual>
+      <origin xyz="-0.00413225 -0.0837181 0.0127" rpy="-1.62012 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets\joint_1.stl"/>
+      </geometry>
+      <material name="joint_1_material">
+        <color rgba="0.219608 0.219608 0.223529 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00413225 -0.0837181 0.0127" rpy="-1.62012 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets\joint_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link elbow -->
+  <link name="elbow">
+    <inertial>
+      <origin xyz="0.0434126 -0.00218935 -0.0245965" rpy="0 0 0"/>
+      <mass value="0.322226"/>
+      <inertia ixx="0.000114428" ixy="4.56214e-05" ixz="-1.86929e-05" iyy="0.00101786" iyz="9.5684e-07" izz="0.00103"/>
+    </inertial>
+    <!-- Part joint_2 -->
+    <visual>
+      <origin xyz="-0.210554 0.0105963 -0.0127" rpy="0.0502834 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets\joint_2.stl"/>
+      </geometry>
+      <material name="joint_2_material">
+        <color rgba="0.219608 0.219608 0.223529 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.210554 0.0105963 -0.0127" rpy="0.0502834 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets\joint_2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link joint_4 -->
+  <link name="joint_4">
+    <inertial>
+      <origin xyz="-9.7362e-06 0.0221956 0.0227839" rpy="0 0 0"/>
+      <mass value="0.127987"/>
+      <inertia ixx="0.000104719" ixy="1.06029e-07" ixz="3.27562e-09" iyy="9.30536e-05" iyz="-3.68685e-06" izz="7.97099e-05"/>
+    </inertial>
+    <!-- Part joint_4 -->
+    <visual>
+      <origin xyz="-0.000354391 -0.368087 0.012954" rpy="-1.57176 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets\joint_4.stl"/>
+      </geometry>
+      <material name="joint_4_material">
+        <color rgba="0.219608 0.219608 0.223529 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000354391 -0.368087 0.012954" rpy="-1.57176 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets\joint_4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link gripper -->
+  <link name="gripper">
+    <inertial>
+      <origin xyz="1.82643e-07 0.00213952 -0.0310671" rpy="0 0 0"/>
+      <mass value="0.025436"/>
+      <inertia ixx="1.00304e-05" ixy="3.50493e-09" ixz="8.28826e-11" iyy="5.10879e-05" iyz="9.70903e-07" izz="4.15277e-05"/>
+    </inertial>
+    <!-- Part part_2 -->
+    <visual>
+      <origin xyz="2.13416e-07 0.0025 0.03" rpy="1.5708 -5.13166e-16 3.14151"/>
+      <geometry>
+        <mesh filename="package://assets\part_2.stl"/>
+      </geometry>
+      <material name="part_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="2.13416e-07 0.0025 0.03" rpy="1.5708 -5.13166e-16 3.14151"/>
+      <geometry>
+        <mesh filename="package://assets\part_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_3 -->
+    <visual>
+      <origin xyz="2.13416e-07 0.0025 0.03" rpy="1.5708 -1.75831e-15 3.14151"/>
+      <geometry>
+        <mesh filename="package://assets\part_3.stl"/>
+      </geometry>
+      <material name="part_3_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="2.13416e-07 0.0025 0.03" rpy="1.5708 -1.75831e-15 3.14151"/>
+      <geometry>
+        <mesh filename="package://assets\part_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1 -->
+    <visual>
+      <origin xyz="-2.13416e-07 -0.0025 -0.02" rpy="1.5708 -7.66722e-16 3.14151"/>
+      <geometry>
+        <mesh filename="package://assets\part_1.stl"/>
+      </geometry>
+      <material name="part_1_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.13416e-07 -0.0025 -0.02" rpy="1.5708 -7.66722e-16 3.14151"/>
+      <geometry>
+        <mesh filename="package://assets\part_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from joint_4 to gripper -->
+  <joint name="5" type="revolute">
+    <origin xyz="-1.97444e-05 0.046282 0.024384" rpy="1.56642 -1.5708 0"/>
+    <parent link="joint_4"/>
+    <child link="gripper"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.57071" upper="1.57088"/>
+  </joint>
+  <!-- Joint from elbow to joint_4 -->
+  <joint name="4" type="revolute">
+    <origin xyz="0.159352 -0.0080195 8.11851e-16" rpy="-3.14159 -1.09041e-15 1.52051"/>
+    <parent link="elbow"/>
+    <child link="joint_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.56983" upper="1.57176"/>
+  </joint>
+  <!-- Joint from shoulders to elbow -->
+  <joint name="3" type="revolute">
+    <origin xyz="0.00626098 0.126846 8.41341e-16" rpy="3.14159 8.53207e-18 -0.049319"/>
+    <parent link="shoulders"/>
+    <child link="elbow"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.52051" upper="1.62108"/>
+  </joint>
+  <!-- Joint from base_joint to shoulders -->
+  <joint name="2" type="revolute">
+    <origin xyz="-0.0127 8.71652e-18 -0.05842" rpy="-1.5708 9.62965e-35 -1.5708"/>
+    <parent link="base_joint"/>
+    <child link="shoulders"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.52148" upper="1.62012"/>
+  </joint>
+  <!-- Joint from base to base_joint -->
+  <joint name="1" type="revolute">
+    <origin xyz="1.17294e-17 5.25755e-18 0.0889" rpy="3.14159 -0 0"/>
+    <parent link="base"/>
+    <child link="base_joint"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
+  </joint>
+  <!-- EE link -->
+<link name="ee">
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.01 0.01 0.01"/> <!-- tiny placeholder -->
+    </geometry>
+    <material name="ee_material">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+</link>
+
+<!-- Fixed joint from gripper to EE -->
+<joint name="gripper_to_ee" type="fixed">
+  <parent link="gripper"/>
+  <child link="ee"/>
+  <origin xyz="0 0 -0.09" rpy="0 0 0"/> <!-- 9cm along gripper Z -->
+</joint>
+
+</robot>
