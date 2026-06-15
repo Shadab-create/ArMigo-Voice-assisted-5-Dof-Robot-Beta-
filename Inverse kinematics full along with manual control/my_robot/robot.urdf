@@ -13,7 +13,7 @@
     <visual>
       <origin xyz="1.17294e-17 5.10979e-18 0.18944" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://assets\base_cover.stl"/>
+        <mesh filename="package://assets/base_cover.stl"/>
       </geometry>
       <material name="base_cover_material">
         <color rgba="0.219608 0.219608 0.223529 1"/>
@@ -22,14 +22,14 @@
     <collision>
       <origin xyz="1.17294e-17 5.10979e-18 0.18944" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://assets\base_cover.stl"/>
+        <mesh filename="package://assets/base_cover.stl"/>
       </geometry>
     </collision>
     <!-- Part base -->
     <visual>
       <origin xyz="1.17294e-17 5.10979e-18 0.103886" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://assets\base.stl"/>
+        <mesh filename="package://assets/base.stl"/>
       </geometry>
       <material name="base_material">
         <color rgba="0.219608 0.219608 0.223529 1"/>
@@ -38,7 +38,7 @@
     <collision>
       <origin xyz="1.17294e-17 5.10979e-18 0.103886" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://assets\base.stl"/>
+        <mesh filename="package://assets/base.stl"/>
       </geometry>
     </collision>
   </link>
@@ -53,7 +53,7 @@
     <visual>
       <origin xyz="-5.08446e-32 6.12323e-19 0.0254" rpy="-3.14159 -0 -6.38126e-16"/>
       <geometry>
-        <mesh filename="package://assets\base_joint.stl"/>
+        <mesh filename="package://assets/base_joint.stl"/>
       </geometry>
       <material name="base_joint_material">
         <color rgba="0.219608 0.219608 0.223529 1"/>
@@ -62,7 +62,7 @@
     <collision>
       <origin xyz="-5.08446e-32 6.12323e-19 0.0254" rpy="-3.14159 -0 -6.38126e-16"/>
       <geometry>
-        <mesh filename="package://assets\base_joint.stl"/>
+        <mesh filename="package://assets/base_joint.stl"/>
       </geometry>
     </collision>
   </link>
@@ -77,7 +77,7 @@
     <visual>
       <origin xyz="-0.00413225 -0.0837181 0.013208" rpy="-1.62012 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets\joint_1__cover.stl"/>
+        <mesh filename="package://assets/joint_1__cover.stl"/>
       </geometry>
       <material name="joint_1__cover_material">
         <color rgba="0.219608 0.219608 0.223529 1"/>
@@ -86,14 +86,14 @@
     <collision>
       <origin xyz="-0.00413225 -0.0837181 0.013208" rpy="-1.62012 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets\joint_1__cover.stl"/>
+        <mesh filename="package://assets/joint_1__cover.stl"/>
       </geometry>
     </collision>
     <!-- Part joint_1 -->
     <visual>
       <origin xyz="-0.00413225 -0.0837181 0.0127" rpy="-1.62012 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets\joint_1.stl"/>
+        <mesh filename="package://assets/joint_1.stl"/>
       </geometry>
       <material name="joint_1_material">
         <color rgba="0.219608 0.219608 0.223529 1"/>
@@ -102,7 +102,7 @@
     <collision>
       <origin xyz="-0.00413225 -0.0837181 0.0127" rpy="-1.62012 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets\joint_1.stl"/>
+        <mesh filename="package://assets/joint_1.stl"/>
       </geometry>
     </collision>
   </link>
@@ -117,7 +117,7 @@
     <visual>
       <origin xyz="-0.210554 0.0105963 -0.0127" rpy="0.0502834 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets\joint_2.stl"/>
+        <mesh filename="package://assets/joint_2.stl"/>
       </geometry>
       <material name="joint_2_material">
         <color rgba="0.219608 0.219608 0.223529 1"/>
@@ -126,7 +126,7 @@
     <collision>
       <origin xyz="-0.210554 0.0105963 -0.0127" rpy="0.0502834 1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets\joint_2.stl"/>
+        <mesh filename="package://assets/joint_2.stl"/>
       </geometry>
     </collision>
   </link>
@@ -141,7 +141,7 @@
     <visual>
       <origin xyz="-0.000354391 -0.368087 0.012954" rpy="-1.57176 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets\joint_4.stl"/>
+        <mesh filename="package://assets/joint_4.stl"/>
       </geometry>
       <material name="joint_4_material">
         <color rgba="0.219608 0.219608 0.223529 1"/>
@@ -150,7 +150,7 @@
     <collision>
       <origin xyz="-0.000354391 -0.368087 0.012954" rpy="-1.57176 -1.5708 0"/>
       <geometry>
-        <mesh filename="package://assets\joint_4.stl"/>
+        <mesh filename="package://assets/joint_4.stl"/>
       </geometry>
     </collision>
   </link>
@@ -165,7 +165,7 @@
     <visual>
       <origin xyz="2.13416e-07 0.0025 0.03" rpy="1.5708 -5.13166e-16 3.14151"/>
       <geometry>
-        <mesh filename="package://assets\part_2.stl"/>
+        <mesh filename="package://assets/part_2.stl"/>
       </geometry>
       <material name="part_2_material">
         <color rgba="0.647059 0.647059 0.647059 1"/>
@@ -174,14 +174,14 @@
     <collision>
       <origin xyz="2.13416e-07 0.0025 0.03" rpy="1.5708 -5.13166e-16 3.14151"/>
       <geometry>
-        <mesh filename="package://assets\part_2.stl"/>
+        <mesh filename="package://assets/part_2.stl"/>
       </geometry>
     </collision>
     <!-- Part part_3 -->
     <visual>
       <origin xyz="2.13416e-07 0.0025 0.03" rpy="1.5708 -1.75831e-15 3.14151"/>
       <geometry>
-        <mesh filename="package://assets\part_3.stl"/>
+        <mesh filename="package://assets/part_3.stl"/>
       </geometry>
       <material name="part_3_material">
         <color rgba="0.231373 0.380392 0.705882 1"/>
@@ -190,14 +190,14 @@
     <collision>
       <origin xyz="2.13416e-07 0.0025 0.03" rpy="1.5708 -1.75831e-15 3.14151"/>
       <geometry>
-        <mesh filename="package://assets\part_3.stl"/>
+        <mesh filename="package://assets/part_3.stl"/>
       </geometry>
     </collision>
     <!-- Part part_1 -->
     <visual>
       <origin xyz="-2.13416e-07 -0.0025 -0.02" rpy="1.5708 -7.66722e-16 3.14151"/>
       <geometry>
-        <mesh filename="package://assets\part_1.stl"/>
+        <mesh filename="package://assets/part_1.stl"/>
       </geometry>
       <material name="part_1_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
@@ -206,7 +206,7 @@
     <collision>
       <origin xyz="-2.13416e-07 -0.0025 -0.02" rpy="1.5708 -7.66722e-16 3.14151"/>
       <geometry>
-        <mesh filename="package://assets\part_1.stl"/>
+        <mesh filename="package://assets/part_1.stl"/>
       </geometry>
     </collision>
   </link>

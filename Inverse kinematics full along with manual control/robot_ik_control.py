@@ -55,7 +55,7 @@ def send_angles(arm_joints, gripper_angle):
 # ==========================
 # URDF PATH
 # ==========================
-URDF_PATH = r"D:\ArMigo(Camera_detection)\my_robot\robot.urdf"
+URDF_PATH = "my_robot/robot.urdf"
 if not os.path.exists(URDF_PATH):
     raise FileNotFoundError(f"URDF not found: {URDF_PATH}")
 
@@ -64,6 +64,7 @@ if not os.path.exists(URDF_PATH):
 # ==========================
 p.connect(p.GUI)
 p.setAdditionalSearchPath(pybullet_data.getDataPath())
+p.setAdditionalSearchPath(os.path.join(os.getcwd(), "my_robot"))
 p.setGravity(0, 0, -9.81)
 p.loadURDF("plane.urdf")
 

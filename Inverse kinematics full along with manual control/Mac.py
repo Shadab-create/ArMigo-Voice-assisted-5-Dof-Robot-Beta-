@@ -78,6 +78,7 @@ if not os.path.exists(URDF_PATH):
 # ==========================
 p.connect(p.GUI)
 p.setAdditionalSearchPath(pybullet_data.getDataPath())
+p.setAdditionalSearchPath(os.path.join(os.getcwd(), "my_robot"))
 p.setGravity(0, 0, -9.81)
 p.loadURDF("plane.urdf")
 

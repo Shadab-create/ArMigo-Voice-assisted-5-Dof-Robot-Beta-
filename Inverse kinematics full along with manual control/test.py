@@ -68,7 +68,7 @@ def send_angles(arm_joints, gripper_angle):
         print("[Serial Write Error]", e)
         ser = None
 
-URDF_PATH = r"D:\shada\Inverse kinematics full along with manual control\my_robot\robot.urdf"
+URDF_PATH = "/home/av_nt/ArMigo-Voice-assisted-5-Dof-Robot-Beta-/Inverse kinematics full along with manual control/my_robot/robot.urdf"
 if not os.path.exists(URDF_PATH):
     raise FileNotFoundError(f"URDF not found: {URDF_PATH}")
 
@@ -282,7 +282,8 @@ def is_flip(new_solution, reference):
 # ==========================
 # MAIN LOOP PARAMETERS
 # ==========================
-STEP_SIZE     = 0.0005
+# Increase the step size so keyboard movement is visible in the PyBullet GUI.
+STEP_SIZE     = 0.01
 workspace_min = np.array([-0.5, -0.5, 0])
 workspace_max = np.array([ 0.5,  0.5,  0.5])
 
@@ -293,10 +294,15 @@ def draw_triad(pos, orn, scale=0.08):
         p.addUserDebugLine(pos, pos + rot[:, i] * scale,
                            colors[i], 2, lifeTime=0.05)
 
+
+def is_key_down(keys, key_code):
+    return key_code in keys and keys[key_code] & p.KEY_IS_DOWN
+
 print("\n[Controls]")
-print("  Arrow keys   → X / Y position")
-print("  PgUp/PgDn    → Z position")
+print("  Arrow keys / WASD → X / Y position")
+print("  PgUp/PgDn / Q/E → Z position")
 print("  Pitch slider → gripper angle (90=horizontal)")
+print("  Click inside the PyBullet window first to capture keys.")
 print("\n[Serial] Rate limited to 20Hz — buffer overflow prevention active\n")
 
 # ==========================
@@ -309,17 +315,17 @@ try:
         gripper_angle = p.readUserDebugParameter(gripper_slider)
 
         # --- EE movement ---
-        if p.B3G_LEFT_ARROW  in keys and keys[p.B3G_LEFT_ARROW]  & p.KEY_IS_DOWN:
+        if is_key_down(keys, p.B3G_LEFT_ARROW) or is_key_down(keys, ord('a')):
             ee_pos[0] -= STEP_SIZE
-        if p.B3G_RIGHT_ARROW in keys and keys[p.B3G_RIGHT_ARROW] & p.KEY_IS_DOWN:
+        if is_key_down(keys, p.B3G_RIGHT_ARROW) or is_key_down(keys, ord('d')):
             ee_pos[0] += STEP_SIZE
-        if p.B3G_UP_ARROW    in keys and keys[p.B3G_UP_ARROW]    & p.KEY_IS_DOWN:
+        if is_key_down(keys, p.B3G_UP_ARROW) or is_key_down(keys, ord('w')):
             ee_pos[1] += STEP_SIZE
-        if p.B3G_DOWN_ARROW  in keys and keys[p.B3G_DOWN_ARROW]  & p.KEY_IS_DOWN:
+        if is_key_down(keys, p.B3G_DOWN_ARROW) or is_key_down(keys, ord('s')):
             ee_pos[1] -= STEP_SIZE
-        if p.B3G_PAGE_UP     in keys and keys[p.B3G_PAGE_UP]     & p.KEY_IS_DOWN:
+        if is_key_down(keys, p.B3G_PAGE_UP) or is_key_down(keys, ord('q')):
             ee_pos[2] += STEP_SIZE
-        if p.B3G_PAGE_DOWN   in keys and keys[p.B3G_PAGE_DOWN]   & p.KEY_IS_DOWN:
+        if is_key_down(keys, p.B3G_PAGE_DOWN) or is_key_down(keys, ord('e')):
             ee_pos[2] -= STEP_SIZE
 
         ee_pos = np.clip(ee_pos, workspace_min, workspace_max)
