@@ -55,7 +55,7 @@ def send_angles(arm_joints, gripper_angle):
 # ==========================
 # URDF PATH
 # ==========================
-URDF_PATH = "my_robot/robot.urdf"
+URDF_PATH = "/home/av_nt/ArMigo-Voice-assisted-5-Dof-Robot-Beta-/Inverse kinematics full along with manual control/my_robot/robot.urdf"
 if not os.path.exists(URDF_PATH):
     raise FileNotFoundError(f"URDF not found: {URDF_PATH}")
 
