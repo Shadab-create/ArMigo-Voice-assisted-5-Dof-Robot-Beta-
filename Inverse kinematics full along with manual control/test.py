@@ -7,9 +7,9 @@ import math
 import os
 import threading
 
-# ==========================
+# ===========================
 # SERIAL CONFIG (ESP32)
-# ==========================
+# ===========================
 SERIAL_PORT = "COM8"
 BAUD_RATE = 115200
 
